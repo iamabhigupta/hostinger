@@ -1,37 +1,69 @@
 /* eslint-disable @next/next/no-img-element */
+import React, { useEffect, useState } from "react";
 import Button from "../components/Button";
 import { FaCheck } from "react-icons/fa";
+import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className="bg-primary py-10">
+    <section className="bg-primary dark:bg-lightGray py-20 md:py-14 ">
       <div className="text-white ">
-        <div className="flex px-32 pb-8 md:flex-row flex-col items-center">
-          <div className="lg:flex-grow md:w-1/2 lg:pr-10 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 className="sm:text-5xl text-3xl mb-4 font-extrabold">
-              Everything You Need to Create a Website
+        <div className="flex px-5 md:px-32 md:flex-row flex-col items-center">
+          <div className="lg:flex-grow md:w-1/2 lg:pr-10 md:pr-16 flex flex-col md:items-start md:text-left md:mb-0 items-center text-center w-full">
+            <h1
+              className="sm:text-6xl text-4xl mb-4 font-extrabold"
+              data-aos="fade-down"
+              data-aos-duration="800"
+            >
+              Everything You Need to <br className="hidden md:block" /> Create a
+              Website
             </h1>
-            <p className="mb-8 leading-relaxed font-bold">
+            <p
+              className="mb-8 leading-relaxed text-xl"
+              data-aos="fade-down"
+              data-aos-duration="800"
+            >
               Join 1,278,620 website owners who are building their businesses
               online.
             </p>
-            <div className="flex justify-center">
-              <button className="flex justify-center items-center text-white bg-[#fc5185] border-0 py-3 px-20 focus:outline-none hover:bg-[#ff3f79] rounded-full text-lg font-extrabold">
-                Get started
-              </button>
+            <div
+              className="flex justify-center"
+              data-aos="fade-up"
+              data-aos-duration="800"
+            >
+              <Link href="#pricing" passHref>
+                <button className="flex justify-center items-center text-white bg-[#fc5185] border-0 py-3 px-20 focus:outline-none hover:bg-[#ff3f79] rounded-full text-lg font-extrabold">
+                  Get started
+                </button>
+              </Link>
             </div>
-            <div className="flex justify-center items-center gap-1 mt-10">
+            <div
+              className="flex justify-center items-center gap-1 mt-10"
+              data-aos="fade-up"
+              data-aos-duration="800"
+            >
               <div>
                 <FaCheck className="text-[#1ea19a] text-sm" />
               </div>
-              <span className="text-sm">30-day money-back guarantee</span>
+              <span className="text-lg">30-day money-back guarantee</span>
             </div>
           </div>
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 hidden md:block">
             <img
-              className="object-cover object-center rounded"
+              className="object-cover dark:hidden object-center rounded"
               alt="hero"
               src="/assets/hero-img.webp"
+              data-aos="zoom-in"
+              data-aos-offset="100"
+              data-aos-duration="800"
+            />
+            <img
+              className="object-cover hidden dark:block object-center rounded"
+              alt="hero"
+              src="/assets/Dark Hero Image.jpg"
+              data-aos="zoom-in"
+              // data-aos-offset="00"
+              data-aos-duration="800"
             />
           </div>
         </div>

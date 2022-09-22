@@ -5,10 +5,12 @@ import React from "react";
 export default function LastSection() {
   return (
     <>
-      <section className="px-10 pb-14 md:pb-24 ">
-        <h2 className="font-extrabold">User-Friendly Control Panel</h2>
-        <div className="flex justify-center items-center gap-14 mt-16">
-          <div className="w-1/2">
+      <section className="px-8 md:px-10 pb-14 md:pb-24 ">
+        <h2 data-aos="fade-up" className="font-extrabold">
+          User-Friendly Control Panel
+        </h2>
+        <div className="flex flex-wrap md:flex-nowrap justify-center items-center gap-14 mt-16">
+          <div data-aos="zoom-in" className="md:w-1/2">
             <video
               className="play-video-on-scroll d-none d-xl-block lazy-load-poster lazy-loaded-video"
               muted="muted"
@@ -24,10 +26,10 @@ export default function LastSection() {
               />
             </video>
           </div>
-          <div className="w-1/2 space-y-10 pl-16">
-            <div className="space-y-6">
+          <div className="md:w-1/2 space-y-10 md:pl-16">
+            <div data-aos="zoom-in" className="space-y-6">
               <img src="/assets/icons/Ease of Use.svg" alt="" />
-              <h4 className="text-textColor font-extrabold text-2xl">
+              <h4 className="text-textColor dark:text-white font-extrabold text-2xl">
                 Ease of Use
               </h4>
               <p>
@@ -35,9 +37,9 @@ export default function LastSection() {
                 those with little experience in website development.
               </p>
             </div>
-            <div className="space-y-6">
+            <div data-aos="zoom-in" className="space-y-6">
               <img src="/assets/icons/Powerful.svg" alt="" />
-              <h4 className="text-textColor font-extrabold text-2xl">
+              <h4 className="text-textColor dark:text-white font-extrabold text-2xl">
                 Powerful
               </h4>
               <p>
@@ -45,9 +47,9 @@ export default function LastSection() {
                 those with little experience in website development.
               </p>
             </div>
-            <div className="space-y-6">
+            <div data-aos="zoom-in" className="space-y-6">
               <img src="/assets/icons/WordPress Optimized.svg" alt="" />
-              <h4 className="text-textColor font-extrabold text-2xl">
+              <h4 className="text-textColor dark:text-white font-extrabold text-2xl">
                 WordPress Optimized
               </h4>
               <p>
@@ -57,13 +59,32 @@ export default function LastSection() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col space-y-5 mt-24 justify-center items-center">
-          <h2 className="font-extrabold ">30-Day Money-Back Guarantee</h2>
-          <p className="">
+      </section>
+      <section className="px-5 md:px-10 pb-14 md:pb-24 ">
+        <div className="flex flex-col space-y-5 md:mt-16 justify-center items-center">
+          <h2
+            data-aos="zoom-in"
+            data-aos-offset="100"
+            data-aos-duration="800"
+            className="font-extrabold "
+          >
+            30-Day Money-Back Guarantee
+          </h2>
+          <p
+            data-aos="zoom-in"
+            data-aos-offset="100"
+            data-aos-duration="800"
+            className="px-3"
+          >
             We&#39;ll refund your payment if you&#39;re not 100% satisfied with
             Hostinger. No hassle, no risk.
           </p>
-          <button className="flex justify-center items-center text-white bg-primary border-0 py-3 px-20 focus:outline-none hover:bg-[#5d2ee7] rounded-full text-lg font-extrabold mt-7 ">
+          <button
+            data-aos="zoom-in"
+            data-aos-offset="100"
+            data-aos-duration="800"
+            className="flex justify-center items-center text-white bg-primary border-0 py-3 px-20 focus:outline-none hover:bg-[#5d2ee7] rounded-full text-lg font-extrabold mt-7 "
+          >
             Get Started
           </button>
         </div>
