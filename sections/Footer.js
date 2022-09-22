@@ -59,7 +59,7 @@ const Footer = () => {
               <img src="/assets/Club.webp" alt="Club" className="w-1/5" />
               <img src="/assets/RuPay.webp" alt="RuPay" className="w-1/5" />
             </div>
-            <p className="text-textColor text-sm leading-tight mt-5 cursor-pointer">
+            <p className="text-textColor dark:text-white text-sm leading-tight mt-5 cursor-pointer">
               Add More
             </p>
           </div>
@@ -326,12 +326,12 @@ const Footer = () => {
           </div>
         </div>
         <div
-          data-aos="zoom-in"
-          data-aos-offset="100"
-          data-aos-duration="400"
+          // data-aos="zoom-in"
+          // data-aos-offset="100"
+          // data-aos-duration="400"
           className="bg-[#f5f5ff] dark:bg-lightGray text-base text-gray-400 dark:text-white"
         >
-          <div className="container border-t border-gray-200 mx-auto py-6 px-5 flex flex-wrap flex-col sm:flex-row text">
+          <div className="container border-t  border-gray-200 mx-auto py-6 px-5 flex flex-wrap flex-col sm:flex-row text">
             <p className="md:text-center sm:text-left">
               © 2004-2022 hostinger.in - India&#39;s #1 Web Hosting & Domains
               provider.

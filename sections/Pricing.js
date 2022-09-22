@@ -1,9 +1,11 @@
+/* eslint-disable @next/next/link-passhref */
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import CloudeFlare from "../components/svg/CloudeFlare";
 import LiteSpeed from "../components/svg/LiteSpeed";
 import Wordpress from "../components/svg/Wordpress";
 import { FaCheck } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Pricing() {
   return (
@@ -32,14 +34,14 @@ export default function Pricing() {
         data-aos="zoom-in-up"
         data-aos-offset="100"
         data-aos-duration="800"
-        className="md:w-9/12 w-10/12 mx-auto shadow mt-10 rounded-md"
+        className="md:w-9/12 w-10/12 mx-auto mt-10 bg-white rounded-lg  border-slate-100 shadow dark:border-slate-600  dark:bg-slate-800 dark:text-white"
       >
-        <div className="bg-primary dark:bg-lightGray dark:border-white dark:border rounded-t-md  mx-auto py-4">
+        <div className="bg-primary dark:bg-  rounded-t-md  mx-auto py-4">
           <h3 className="text-white">Best Web Hosting</h3>
         </div>
         {/* Content  */}
-        <div className="flex  justify-evenly items-center border-x border-b border-gray-300 py-12 dark:bg-lightGray">
-          <div className="space-y-3 hidden md:block">
+        <div className="space-y-10 pt-16 md:px-12 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0 dark:bg-lightGray">
+          <div className="space-y-3 hidden md:block px-6">
             <div className="flex justify-start items-center gap-1">
               <div>
                 <FaCheck className="text-[#1ea19a] text-sm" />
@@ -74,10 +76,9 @@ export default function Pricing() {
               </p>
             </div>
           </div>
-          <div className="border-r border-gray-300 h-40 hidden md:block"></div>
-          <div className="text-textColor  dark:text-white flex flex-col justify-center items-center ">
+          <div className="text-textColor md:px-6 dark:text-white flex flex-col justify-center items-center ">
             <p className="relative">
-              <span className="-mt-3 absolute text-2xl -ml-3">₹</span>
+              <span className="-mt-2 absolute text-2xl -ml-5">₹</span>
               <span className="text-6xl font-extrabold">149.00</span>
               <span className="font-extrabold text-lg">/mo</span>
             </p>
@@ -91,7 +92,7 @@ export default function Pricing() {
               Plan Features
             </p>
             <div className="space-y-3 block md:hidden">
-              <div className="flex justify-start items-center gap-1">
+              <div className="flex justify-center items-center gap-1">
                 <div>
                   <FaCheck className="text-[#1ea19a] text-sm" />
                 </div>
@@ -99,7 +100,7 @@ export default function Pricing() {
                   <span className="font-bold">Unlimited </span> Free SSL
                 </p>
               </div>
-              <div className="flex justify-start items-center gap-1">
+              <div className="flex justify-center items-center gap-1">
                 <div>
                   <FaCheck className="text-[#1ea19a] text-sm" />
                 </div>
@@ -107,7 +108,7 @@ export default function Pricing() {
                   <span className="font-bold">Free </span>Domain
                 </p>
               </div>
-              <div className="flex justify-start items-center gap-1">
+              <div className="flex justify-center items-center gap-1">
                 <div>
                   <FaCheck className="text-[#1ea19a] text-sm" />
                 </div>
@@ -115,7 +116,7 @@ export default function Pricing() {
                   <span className="font-bold">Free </span> Email
                 </p>
               </div>
-              <div className="flex justify-start items-center gap-1">
+              <div className="flex justify-center items-center gap-1">
                 <div>
                   <FaCheck className="text-[#1ea19a] text-sm" />
                 </div>
@@ -125,9 +126,7 @@ export default function Pricing() {
               </div>
             </div>
           </div>
-          <div className="border-r border-gray-300 h-40 hidden md:block"></div>
-
-          <div className="space-y-3 hidden md:block">
+          <div className="space-y-3 px-6 hidden md:block">
             <div className="flex justify-start items-center gap-1">
               <div>
                 <FaCheck className="text-[#1ea19a] text-sm" />
@@ -163,10 +162,14 @@ export default function Pricing() {
           </div>
         </div>
         {/* Content  */}
-        <div className="rounded-b-md mx-auto dark:bg-lightGray py-7 border-x border-b border-gray-300">
-          <p className="text-textColor dark:text-white text-center underline font-semibold cursor-pointer text-xl">
-            See All Features
-          </p>
+        <div className="rounded-b-md mx-auto dark:bg-lightGray py-7  ">
+          <Link href="/pricing" passHref>
+            <a>
+              <p className="text-textColor dark:text-white text-center underline font-semibold cursor-pointer text-xl divide-x-2 divide-white">
+                See All Features
+              </p>
+            </a>
+          </Link>
         </div>
         {/* Our services include:  */}
       </div>

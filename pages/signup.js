@@ -6,7 +6,7 @@ import Link from "next/link";
 // import { Checkbox } from "@material-tailwind/react";
 import { FcGoogle } from "react-icons/fc";
 
-export default function Login() {
+export default function Signup() {
   const [open, setOpen] = useState(false);
   const [color, setColor] = useState(false);
 
@@ -65,9 +65,8 @@ export default function Login() {
                 </svg>
               </Link>
             </div>
-            <h2 className="text-2xl font-medium mt-8">Log IN</h2>
+            <h2 className="text-2xl font-medium mt-8">Sign Up</h2>
             <div className="my-5 space-y-5">
-              {/* Email  */}
               <div>
                 <label htmlFor="email" className="leading-7 text-lg ">
                   Email
@@ -79,7 +78,6 @@ export default function Login() {
                   className="w-full text-slate-900 bg-white focus-within:text-gray-900 rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-lg outline-none  py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
-              {/* Password  */}
               <div>
                 <label htmlFor="email" className="leading-7 text-lg ">
                   Password
@@ -88,9 +86,15 @@ export default function Login() {
                   <span className="absolute inset-y-0 right-0 flex items-center pl-2">
                     <button type="submit" className="h-full px-3">
                       {open === false ? (
-                        <FaEyeSlash onClick={toggle} className="text-2xl" />
+                        <FaEyeSlash
+                          onClick={toggle}
+                          className="text-2xl text-slate-900"
+                        />
                       ) : (
-                        <FaEye onClick={toggle} className="text-2xl" />
+                        <FaEye
+                          onClick={toggle}
+                          className="text-2xl text-slate-900"
+                        />
                       )}
                     </button>
                   </span>
@@ -98,6 +102,34 @@ export default function Login() {
                     type={open === false ? "password" : "text"}
                     id="password"
                     name="password"
+                    className="w-full text-slate-900 bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-lg outline-none  py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  />
+                </div>
+              </div>
+              <div>
+                <label htmlFor="email" className="leading-7 text-lg ">
+                  Confirm Password
+                </label>
+                <div className="relative  focus-within:text-gray-900 ">
+                  <span className="absolute inset-y-0 right-0 flex items-center pl-2">
+                    <button type="submit" className="h-full px-3">
+                      {open === false ? (
+                        <FaEyeSlash
+                          onClick={toggle}
+                          className="text-2xl text-slate-900"
+                        />
+                      ) : (
+                        <FaEye
+                          onClick={toggle}
+                          className="text-2xl text-slate-900"
+                        />
+                      )}
+                    </button>
+                  </span>
+                  <input
+                    type={open === false ? "password" : "text"}
+                    id="confirm-password"
+                    name="confirm-password"
                     className="w-full text-slate-900 bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-lg outline-none  py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                 </div>
@@ -123,27 +155,14 @@ export default function Login() {
                 </div>
               </div>
             </div>
-            {/* <p className=" text-lg">
-              By proceeding, you agree to the{" "}
-              <a href="#">
-                <span className="text-teal-500 hover:underline cursor-pointer">
-                  Terms and Conditions
-                </span>
-              </a>
-            </p> */}
             <p className=" text-lg mt-5 text-center">
-              Don&#39;t have a Account?{" "}
+              Already have a Lapaas ID?{" "}
               <a href="#">
                 <span className="text-primary hover:underline cursor-pointer">
-                  Sign Up
+                  Log in
                 </span>
               </a>
             </p>
-            {/* <div className="font-medium text-lg flex justify-end items-center  gap-8 mt-16">
-              <p className="cursor-pointer">Help</p>
-              <p className="cursor-pointer">Privacy</p>
-              <p className="cursor-pointer">Terms</p>
-            </div> */}
           </div>
         </div>
       </div>

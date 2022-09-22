@@ -1,27 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![Logo](https://assets.hostinger.com/images/logo-homepage2020-f9c79137d7.svg)
 
-![Project Preview](./dark.png)
+# Hostinger Website Redesigned
 
-## Available Scripts
+Hey, My name is Abhishek Gupta. This is Hostinger Website which I have redesigned. I have created this Website to participate in the THAPA CODEFEST.
 
-In the project directory, you can run:
+I have added Dark Mode and simple animations to the newly designed Website.
 
-### `yarn install`
+## 🔗 Links
 
-Instal All dependencies in this project
+[Demo](https://hostinger-iamabhigupta.vercel.app/)
+[Login](https://hostinger-iamabhigupta.vercel.app/login)
+[Signup](https://hostinger-iamabhigupta.vercel.app/signup)
+[Pricing](https://hostinger-iamabhigupta.vercel.app/pricing)
+[404](https://hostinger-iamabhigupta.vercel.app/404)
 
-### `yarn dev`
+## Tech Stack
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-### Link
-
-Next js: https://nextjs.org/docs/getting-started
-TailwindCSS: https://tailwindcss.com/docs/guides/nextjs
-Next-Themes: https://github.com/pacocoursey/next-themes
-HeroIcons: https://heroicons.com/
-
-### Video Tutorial
-
-You can see my youtube video for this project in [here](https://youtu.be/z2B3gRt2nj0)
+**Frontend:** React Js, Nest Js, TailwindCSS
