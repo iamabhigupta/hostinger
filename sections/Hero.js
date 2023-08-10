@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useEffect, useState } from "react";
-import { FaCheck } from "react-icons/fa";
-import Link from "next/link";
+import React, { useEffect, useState } from 'react';
+import { FaCheck } from 'react-icons/fa';
+import Link from 'next/link';
 
 const Hero = () => {
   return (
@@ -22,7 +22,7 @@ const Hero = () => {
               data-aos="fade-down"
               data-aos-duration="800"
             >
-              Join 1,278,620 website owners who are building their businesses
+              Join 1,278,670 website owners who are building their businesses
               online.
             </p>
             <div
