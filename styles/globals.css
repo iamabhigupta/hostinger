@@ -4,8 +4,8 @@
 
 @layer base {
   body {
-    /* font-family: muli, sans-serif; */
-    font-family: "Reem Kufi Fun", sans-serif;
+    font-family: muli, sans-serif;
+    /* font-family: "Reem Kufi Fun", sans-serif; */
     @apply dark:bg-slate-900 dark:text-gray-100 text-slate-900;
   }
 }
